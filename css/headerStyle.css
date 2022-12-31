@@ -1,0 +1,100 @@
+/* @font-face {
+    font-family: 'OTWelcomeRA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+} */
+.header{
+      /* 글자 드래그 금지 */
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      box-sizing: border-box;
+}
+.headerMain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.header a{
+    text-decoration: none;
+    color: black;
+}
+/* 로고부분 */
+.logoImg{
+    width: 200px;
+    display: inline-block;
+}
+.logo>a>span{
+    color: #b3b3b3;
+    font-size: 0.9em;
+    position: absolute;
+    top: 60px;
+}
+/* 로그인 메뉴 관련 */
+.loginMenu{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+.loginMenu a{
+    padding: 8px 10px;
+}
+/* 가운데 회색 줄 */
+.centerLine{
+    background-color: #dcdcdc;
+    width: 100%;
+    height: 1.5px;
+    border: 0;
+    /* margin-left: -8px; */
+    /* padding-right: 12px; */
+}
+/* 두번째 헤더관련 */
+.headerCategory{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 8px;
+}
+/* 카테고리 관련 디자인 */
+.categoryList{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    font-size: 1em;
+}
+.categoryList a{
+    padding: 8px 30px;
+}
+/* 검색바관련 */
+.searchWarp{
+    background-color: #f1f1f1;
+    padding: 5px;
+    padding-left: 15px;
+    border-radius: 40px;
+}
+.searchWarp>input{
+    border: none;
+    background-color: #f1f1f1;
+    padding: 5px;
+    padding-right: 130px;
+}
+.searchWarp>input:focus{
+    outline: none;
+}
+/* 두번째선 디자인 */
+.lastLine{
+    border: 0;
+    height:3px;
+    background-color: #ff3d00 ;
+    width: 100%;
+    margin-left: -12px;
+    padding-right: 12px;
+}

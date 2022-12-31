@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전화번호로 회원가입</title>
+    <link rel="stylesheet" href="./css/headerStyle.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/regist_hp.css">
+
+</head>
+
+<body>
+    <noscript>
+        You need to enable JavaScript to run this app.<br />
+        자바스크립트를 활성화해주시기 바랍니다.
+    </noscript>
+    <div>
+        <span itemscope="" itemtype="http://schema.org/Organization">
+            <link itemprop="url" href="https://app.catchtable.co.kr">
+            <a itemprop="sameAs" href="https://apps.apple.com/kr/app/id1485193566"></a>
+            <a itemprop="sameAs"
+                href="https://play.google.com/store/apps/details?id=co.kr.catchtable.android.catchtable_app"></a>
+            <a itemprop="sameAs" href="https://pf.kakao.com/_xhXxeNC"></a>
+            <a itemprop="sameAs" href="https://www.instagram.com/catchtable_official"></a>
+            <a itemprop="sameAs" href="https://www.facebook.com/catchtable"></a>
+            <a itemprop="sameAs" href="https://blog.naver.com/table_note"></a>
+            <a itemprop="sameAs" href="https://www.youtube.com/channel/UCoz_V6ul7SQIQz-ezrY8WpA"></a>
+        </span>
+    </div>
+    <div style="display:none;">
+        <a href="https://app.catchtable.co.kr/ct/search">레스토랑 예약</a>
+        <a href="https://app.catchtable.co.kr">티켓 할인</a>
+        <a href="https://app.catchtable.co.kr">신규 오픈</a>
+    </div>
+
+    <div id="root">
+        <!-- header 시작 -->
+        <header class="header">
+            <div class="headerMain">
+
+                <div class="logo">
+                    <a href="#"><img class="logoImg" src="image/logo.png" /><span>행복한 미식 생활, 건강한 예약 문화</span></a>
+
+                </div>
+                <div class="login">
+                    <ul class="loginMenu">
+                        <li><a href="">로그인</a>|</li>
+                        <li><a href="">회원가입</a>|</li>
+                        <li><a href="">고객센터</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="centerLine" />
+            <div class="headerCategory">
+                <div class="category">
+                    <ul class="categoryList">
+                        <li><a href="">타임라인</a></li>
+                        <li><a href="">마이다이닝</a></li>
+                        <li><a href="">마이페이지</a></li>
+                    </ul>
+                </div>
+                <div class="searchBar">
+                    <form>
+                        <div class="searchWarp">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input class="searchText" type="text" placeholder="지역,음식,레스토랑명검색">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="lastLine">
+        </header>
+        <!-- header 끝 -->
+
+        <div class="wrapper" style="">
+            <header id="header" class="opaque">
+                <div class="container">
+                    <div class="header-left"> <!-- [제거] <button class="btn-back">이전</button> -->
+                        <h1 class="page-title">회원가입</h1>
+                    </div>
+                </div>
+            </header>
+            <main id="main">
+                <section class="section" style="padding-top: 9px;">
+                    <div class="container gutter-sm">
+                        <div class="form-block mb-32">
+                            <div class="form-block-header">
+                                <h3 class="form-block-title">이름 <span class="color-red">*</span></h3>
+                            </div>
+                            <div class="form-block-body">
+                                <div class="input-control"><input type="text" name="userName" class="form-input"
+                                        placeholder="이름을 입력해 주세요." autocomplete="nope" value=""></div>
+                                <p class="font-12 color-gray mt-10">레스토랑을 예약할 때 사용할 이름이므로 꼭 실명을 사용해 주세요.</p>
+                            </div>
+                        </div>
+                        <div class="form-block mb-32">
+                            <div class="form-block-header">
+                                <h3 class="form-block-title">휴대폰 번호 <span class="color-red">*</span></h3>
+                                <div><a href="#" class="__q ml-10">?</a></div>
+                            </div>
+                            <div class="form-block-body">
+                                <div class="input-control mb-10">
+                                    <div class="input-control-with-btn mb-10"><input type="text" class="form-input"
+                                            placeholder="숫자만 입력해 주세요." inputmode="numeric" autocomplete="nope"
+                                            value=""><button class="btn btn-lg btn-red w-104 pl-0 pr-0" disabled="">인증번호
+                                            요청</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-block mb-32">
+                            <div class="form-block-header">
+                                <h3 class="form-block-title">비밀번호 <span class="color-red">*</span></h3>
+                            </div>
+                            <div class="form-block-body">
+                                <div class="input-control mb-10"><input type="password" name="userPassword"
+                                        class="form-input" placeholder="비밀번호를 입력해 주세요." value=""></div>
+                                <div class="input-control"><input type="password" name="userPassword2"
+                                        class="form-input" placeholder="비밀번호를 다시 한 번 입력해 주세요."></div>
+                                <p class="font-12 mt-10" style="color: rgb(102, 102, 102);">영문, 숫자, 특수문자 중 2종류 이상을 조합하여
+                                    8-20자리로 설정해주세요.</p>
+                            </div>
+                        </div>
+                        <div class="form-block mb-32">
+                            <div class="form-block-header">
+                                <h3 class="form-block-title">닉네임 (선택)</h3>
+                            </div>
+                            <div class="form-block-body">
+                                <div class="input-control"><input type="text" name="userNickname" class="form-input"
+                                        autocomplete="nope" placeholder="닉네임을 입력해 주세요." value=""></div>
+                            </div>
+                        </div>
+
+                        <!-- [추가] 생일 -->
+                        <div class="form-block mb-32">
+                            <div class="form-block-header">
+                                <h3 class="form-block-title">생년월일</h3>
+                            </div>
+                            <div class="form-block-body">
+                                <div class="input-control">
+                                    <input type="text" name="userNickname" class="form-input"
+                                        autocomplete="nope" placeholder="닉네임을 입력해 주세요." value="">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="css-1pjgd36 e744wfw6">
+                            <div class="css-1y8737n e744wfw5"><label class="css-1obgjqh e744wfw4">생년월일</label></div>
+                            <div class="css-82a6rk e744wfw3">
+                                <div class="css-18n8lnw e1ke3ehm1">
+                                    <div class="css-1dkwuq4 e1uzxhvi6">
+                                        <div height="40" class="css-xsmgyi e1uzxhvi3">
+                                            <input data-testid="input-box" name="birthYear" placeholder="YYYY" type="text" height="40"
+                                            class="css-1368454 e1uzxhvi2" value="">
+                                        </div>
+                                    </div>
+                                    <span class="css-5lnvt6 e1ke3ehm0"></span>
+                                    <div class="css-1dkwuq4 e1uzxhvi6">
+                                        <div height="40" class="css-xsmgyi e1uzxhvi3">
+                                            <input data-testid="input-box" name="birthMonth" placeholder="MM" type="text" height="40"
+                                            class="css-1368454 e1uzxhvi2" value="">
+                                        </div>
+                                    </div>
+                                    <span class="css-5lnvt6 e1ke3ehm0"></span>
+                                    <div class="css-1dkwuq4 e1uzxhvi6">
+                                        <div height="40" class="css-xsmgyi e1uzxhvi3">
+                                            <input data-testid="input-box" name="birthDay" placeholder="DD" type="text" height="40"
+                                            class="css-1368454 e1uzxhvi2" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="css-1w0ksfz e744wfw2"></div>
+                        </div>
+                        <!-- [추가] 생일 끝 -->
+
+                        <!-- <div class="form-block mb-20">
+                            <div class="form-block-header">
+                                <h3 class="form-block-title">전화·링크 예약 앱에 연동하기 (선택)</h3>
+                            </div>
+                            <div class="form-block-body">
+                                <div class="input-control"><label class="label-checkbox"><input type="checkbox"
+                                            class="form-checkbox" autocomplete="nope" readonly=""><span
+                                            class="label strong">연동하기</span></label></div>
+                            </div>
+                        </div> -->
+                    </div>
+                </section>
+                <!-- <section class="section bg-gray mb-32">
+                    <div class="container gutter-sm pt-30 pb-30">
+                        <h4 class="font-12 color-gray mb-10">예약 연동이란?</h4>
+                        <ul class="list plain-txt font-10 color-gray">
+                            <li class="mb-5">전화 또는 예약 링크로 한 예약을 앱에서 관리할 수 있게 하는 기능입니다. 예약에 사용한 휴대폰 번호로 방문예정일을 불러올 수 있어요!
+                            </li>
+                            <li class="mb-5">캐치테이블 가맹점 예약만 연동 가능하며,<br>연동하기 활성화 이전에 방문했던 전화 예약 내역은 불러올 수 없습니다.</li>
+                            <li class="mb-5">전화 또는 예약 링크로 한 예약은 각 레스토랑의 운영 정책에 따라 앱에서 예약 취소 및 변경이 불가능할 수 있습니다.</li>
+                            <li>예약 링크는 캐치테이블 가맹점을 예약할 수 있는 웹페이지 링크를 말합니다.</li>
+                        </ul>
+                    </div>
+                </section> -->
+                <section class="section">
+                    <div class="section">
+                        <div class="container gutter-sm"><label class="label-checkbox"><input type="checkbox"
+                                    class="form-checkbox" autocomplete="nope" readonly="">&nbsp;<span
+                                    class="label ebold strong font-15">이용자 약관 전체 동의</span></label>
+                            <hr class="hairline compact mt-15 mb-15">
+                            <div><label class="label-checkbox label-checkbox-with-btn mb-15"><input type="checkbox"
+                                        class="form-checkbox" autocomplete="nope" readonly=""><span
+                                        class="label strong font-14">[필수] 만 14세 이상입니다<div class="::after"></div>
+                                        </span></label></div>
+                            <div><label class="label-checkbox label-checkbox-with-btn mb-15"><input type="checkbox"
+                                        class="form-checkbox" autocomplete="nope" readonly=""><span
+                                        class="label strong font-14">[필수] 캐치테이블 이용 약관 동의</span><a href=""
+                                        class="__view">보기</a></label></div>
+                            <div><label class="label-checkbox label-checkbox-with-btn mb-15"><input type="checkbox"
+                                        class="form-checkbox" autocomplete="nope" readonly=""><span
+                                        class="label strong font-14">[필수] 개인정보 수집 및 이용 약관 동의</span><a href=""
+                                        class="__view">보기</a></label></div>
+                            <div><label class="label-checkbox label-checkbox-with-btn mb-15"><input type="checkbox"
+                                        readonly="" class="form-checkbox"><span class="label strong font-14">[필수] 개인정보
+                                        제3자 제공 동의</span><a href="#" class="__view">보기</a></label></div>
+                            <div><label class="label-checkbox label-checkbox-with-btn mb-15"><input type="checkbox"
+                                        class="form-checkbox" autocomplete="nope" readonly=""><span
+                                        class="label strong font-14">[선택] 개인정보 제공 동의</span><a href=""
+                                        class="__view">보기</a></label></div>
+                            <div><label class="label-checkbox label-checkbox-with-btn mb-15"><input type="checkbox"
+                                        class="form-checkbox" readonly=""><span class="label strong font-14">[선택] 이벤트 알림
+                                        서비스 동의</span><a href="" class="__view">보기</a></label>
+                                <div class="checkbox-inline-group a-center"><label class="label-checkbox"><input
+                                            autocomplete="nope" readonly="" type="checkbox" class="form-checkbox"><span
+                                            class="label strong">푸시 알림</span></label><label
+                                        class="label-checkbox"><input autocomplete="nope" readonly="" type="checkbox"
+                                            class="form-checkbox"><span class="label strong">SMS 수신</span></label><label
+                                        class="label-checkbox"><input autocomplete="nope" readonly="" type="checkbox"
+                                            class="form-checkbox"><span class="label strong">이메일 수신</span></label></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container gutter-sm"><button class="btn btn-lg btn-red full-width mt-40">시작하기</button>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <!-- footer 시작 -->
+        <footer id="footer">
+            <div class="container gutter-sm">
+                <h4><strong>(주)와드</strong></h4>
+                <p>대표 : <strong>용태순</strong></p>
+                <p>주소 : <strong>경기도 성남시 분당구 성남대로331번길 8, 킨스타워 1600호</strong></p>
+                <p>사업자등록번호 : <strong>614-88-00597</strong></p>
+                <p>통신판매업 신고번호 : <strong>2017-성남분당-0933호</strong></p>
+                <p>개인정보담당 : <strong>service@catchtable.co.kr</strong></p>
+                <div class="footer-menu"><a href="/ct/main/policyService" style="font-weight: 600;">서비스 이용약관</a><span
+                        class="split">|</span><a href="/ct/main/policyPrivacy" style="font-weight: 600;">개인정보
+                        처리방침</a><span class="split">|</span><a href="/ct/main/policyLocation"
+                        style="font-weight: 600;">위치정보 이용약관</a><span class="split">|</span><a href="#"
+                        style="font-weight: 600;">인재 채용</a><span class="split">|</span><a href="/ct/main/policyLocation"
+                        style="font-weight: 600;">입점 문의</a></div>
+            </div>
+        </footer>
+        <!-- footer 끝 -->
+
+    </div>
+
+    <script defer="defer" type="text/javascript" crossorigin="anonymous"
+        src="https://d1il53drs2cmia.cloudfront.net/static/appjs/20221229183239/framework_main.js"></script>
+    <script defer="defer" type="text/javascript" crossorigin="anonymous"
+        src="https://d1il53drs2cmia.cloudfront.net/static/appjs/20221229183239/vendor_main.js"></script>
+    <script defer="defer" type="text/javascript" crossorigin="anonymous"
+        src="https://d1il53drs2cmia.cloudfront.net/static/appjs/20221229183239/ct_main.js"></script>
+    <!-- 공통 적용 스크립트 , 모든 페이지에 노출되도록 설치. 단 전환페이지 설정값보다 항상 하단에 위치해야함 -->
+    <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+    <script type="text/javascript">
+        if (!wcs_add) var wcs_add = {};
+        wcs_add["wa"] = "s_3c2cf433f210";
+        if (!_nasa) var _nasa = {};
+        if (window.wcs) {
+            wcs.inflow("catchtable.co.kr");
+            wcs_do(_nasa);
+        }
+    </script>
+
+</body>
+
+</html>
